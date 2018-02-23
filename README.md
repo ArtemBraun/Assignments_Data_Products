@@ -4,4 +4,4 @@
 
 #### The task is to create a web page using R Markdown that features a map created with Leaflet. 
 
-#### Assignment can be accessed here: https://artembraun.github.io/Assignments_Data_Products/
+#### Assignment can be accessed here: https://artembraun.github.io/Data_Products_Leaflet/
