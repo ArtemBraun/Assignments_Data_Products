@@ -1,0 +1,22 @@
+---
+title: Leaflet Assignment Week 2 Course 9
+author: "Artem Braun"
+date: '16th December 2017'
+output: html_document
+---
+
+The task is to create a web page using R Markdown that features a map created with Leaflet.
+The webpage is hosted on GitHub Pages and contains the date the document was created and the map created with Leaflet. 
+  
+``````{r, echo=FALSE, message=FALSE}
+library(leaflet)
+Moscow = data.frame(
+        lat = c(55.716939, 55.691242),
+        lng = c(37.595078, 37.660278),
+        labels = c("My home", "My work")
+)
+my_map <- leaflet(Moscow) %>% 
+              addTiles %>% 
+              addPopups(popup=~labels)
+my_map
+```
